@@ -1,0 +1,18 @@
+<h1>User Information</h1>
+<h2>Thank you for logging in,&nbsp;{{nickname}}.</h2>
+<br>
+<h3>Your User ID is:</h3>
+<p>{{id}}</p>
+<br>
+<h3>Your Auth0 JWT is:</h3>
+<div id="jwt">
+    <p>{{jwt}}</p>
+</div>
+<br>
+<p><strong>Note: </strong> Be careful copying these values.</p>
+<p>It is easy to accidentally copy some newline characters at the end of the string.</p>
+<p>If the string ends in newline, it won't work in postman.</p>
+
+<form action="/logout" method="GET">
+    <input id="button" type="submit" value="Log Out">
+</form>
